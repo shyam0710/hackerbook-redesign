@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackerBook - Master Ethical Hacking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0e1a 0%, #0d1528 100%);
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            background: rgba(10, 14, 26, 0.95);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #0066cc, #0099ff);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo span {
+            color: #ffffff;
+        }
+
+        .logo span.blue {
+            color: #0099ff;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #0099ff;
+        }
+
+        .contact-btn {
+            background: linear-gradient(135deg, #ffcc00, #ffaa00);
+            color: #0a0e1a;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .contact-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 8rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(0, 153, 255, 0.1);
+            border: 1px solid #0099ff;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            color: #0099ff;
+        }
+
+        .hero h1 {
+            font-size: 6rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 .white {
+            color: #ffffff;
+        }
+
+        .hero h1 .blue {
+            color: #66ccff;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #a0aec0;
+            max-width: 600px;
+            margin-bottom: 3rem;
+            line-height: 1.8;
+        }
+
+        .hero p a {
+            color: #ffffff;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #00ccff, #0099ff);
+            color: #ffffff;
+            padding: 1rem 2.5rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.3s;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            padding: 1rem 2.5rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.3s;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Stats Section */
+        .stats {
+            display: flex;
+            gap: 4rem;
+            margin-top: 5rem;
+            padding-top: 3rem;
+            border-top: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stat {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .stat-label {
+            color: #718096;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <div class="logo-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                    <path d="M12 2L4 6v12l8 4 8-4V6l-8-4zm0 2.5L18 7.5v9l-6 3-6-3v-9l6-3z"/>
+                </svg>
+            </div>
+            <span class="blue">HACKER</span><span>BOOK</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">TRAININGS</a></li>
+            <li><a href="#">CERTIFICATIONS</a></li>
+            <li><a href="#">BLOGS</a></li>
+        </ul>
+        <a href="#" class="contact-btn">CONTACT US</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="badge">
+            <span>⚡</span>
+            WORLD'S NO.1 CERTIFICATION PATH
+        </div>
+        <h1>
+            <div class="white">Master</div>
+            <div class="blue">Ethical Hacking</div>
+        </h1>
+        <p>
+            Join Bangalore's elite cybersecurity community. We bridge the gap between 
+            <a href="#">Learning</a> and <a href="#">Earning</a>.
+        </p>
+        <div class="cta-buttons">
+            <a href="#" class="btn-primary">
+                ENROLL NOW
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M7.5 15L12.5 10L7.5 5L6.086 6.414L10.172 10.5L6.086 14.586L7.5 15Z"/>
+                </svg>
+            </a>
+            <a href="#" class="btn-secondary">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M3 5V15H5V5H3ZM17 11V13H7V11H17ZM7 7V9H15V7H7Z"/>
+                </svg>
+                VIEW SYLLABUS
+            </a>
+        </div>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">1,500+</div>
+                <div class="stat-label">GLOBAL PLACEMENTS</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">PRACTICAL ORIENTED</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
